@@ -13,6 +13,9 @@ const TodoSchema = new Schema ({
     timestamp: {
         type: String,
         default: Date.now()
+    },
+    index: {
+        type: Number
     }
 });
 

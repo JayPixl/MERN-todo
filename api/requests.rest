@@ -6,13 +6,23 @@ POST http://localhost:3001/todo/new
 Content-Type: application/json
 
 {
-    "text": "Do laundry"
+    "text": "Do yet another thing"
 }
 
 ###
 
-DELETE http://localhost:3001/todo/delete/642b18b634e56c64e0c900c1
+DELETE http://localhost:3001/todo/delete/642d829e281d3c15f3f7a92c
 
 ###
 
 GET http://localhost:3001/todo/complete/642b1befd92774c103fe59e0
+
+###
+
+POST http://localhost:3001/todo/swap
+Content-Type: application/json
+
+{
+    "first": "642ce1ff14336d34d08b9edc",
+    "second": "642ce1e814336d34d08b9ed9"
+}
